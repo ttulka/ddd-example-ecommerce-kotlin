@@ -74,10 +74,7 @@ Later, we can think about more supporting domains (not implemented in this proje
   
 The e-commerce system is a web application using a **Portal** component implementing the [Backends For Frontends (BFF)][bff] pattern.
 
-The idea of [Microfrontends][microf] is implemented in an [alternative branch](https://github.com/ttulka/ddd-example-ecommerce/tree/microfrontend).
-
 [bff]: https://samnewman.io/patterns/architectural/bff/
-[microf]: https://martinfowler.com/articles/micro-frontends.html
 
 ### Event Workflow
 
@@ -224,8 +221,6 @@ com.ttulka.ecommerce.billing:payment-spring-boot-starter
 
 Note: Events are actually part of the domain, that's why they are in the package `..ecommerce.billing.payment` and not in `..ecommerce.billing.payment.events`. They are in a separate module to break the build cyclic dependencies: a dependent module (Listener) needs to know only Events and not the entire Domain. 
 
-See this approach in an alternative branch: [modulith](https://github.com/ttulka/ddd-example-ecommerce/tree/modulith).
-
 ### Anatomy of a Service 
 
 **[Service](http://udidahan.com/2010/11/15/the-known-unknowns-of-soa/)** is the technical authority for a specific business capability.
@@ -292,7 +287,7 @@ Although all fundamental use-case were implemented, there is still a room for im
 
 ### Where to Next
 
-Check out the alternative Java version with additional concepts in action:
+Check out the alternative Java version in action with additional concepts such as Microfrontends:
 
 https://github.com/ttulka/ddd-example-ecommerce
 
