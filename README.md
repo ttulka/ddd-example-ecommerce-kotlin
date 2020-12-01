@@ -1,4 +1,4 @@
-# DDD Example Project in Kotlin: E-Commerce
+# DDD Example Project in Kotlin: eCommerce
 
 The purpose of this project is to provide a sample implementation of an e-commerce product following **Domain-Driven Design (DDD)** and **Service-Oriented Architecture (SOA)** principles.
 
